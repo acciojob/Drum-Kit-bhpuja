@@ -1,1 +1,41 @@
 /*  your css code here. If applicable */
+/* Basic styling */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f1f1f1;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.keys {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 20px;
+  justify-items: center;
+}
+
+.key {
+  width: 100px;
+  height: 100px;
+  font-size: 24px;
+  text-align: center;
+  line-height: 100px;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.key:active {
+  background-color: #45a049;
+}
+
+/* Add some hover effect */
+.key:hover {
+  background-color: #45a049;
+}
